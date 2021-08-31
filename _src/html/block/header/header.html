@@ -1,3 +1,69 @@
 <header class="header">
-  <div class="container">header</div>
+  <div class="container header__container">
+    <div class="header__top">
+
+      <a href="#" class="header__logo logo">
+        <picture>
+          <source srcset="static/img/logo/logo-mob.png" media="(max-width: 675px)">
+          <img src="static/img/logo/logo.png" alt="Логотип">
+        </picture>
+
+      </a>
+
+      <form class="header__search search">
+        <div class="search__wrap-input">
+          <input type="search" class="search__input" name="search" placeholder="Поиск по сайту">
+        </div>
+      </form>
+
+      <div class="header__phone phone">
+        <a class="phone__link" href="tel:+74952258338">+7 (495) 225-83-38
+        </a>
+        <a class="phone__link" href="tel:+79855333568">+7 (985) 533-35-68
+        </a>
+      </div>
+
+      <div class="header__address address">
+        <span class="address__location">г. Москва, Тверской бульвар, д. 26</span>
+        <span class="address__parking">бесплатная парковка</span>
+      </div>
+
+      <button class="header__arrow btn-reset" type="button"></button>
+    </div>
+    <!--/header-top-->
+
+    <div class="header__bottom">
+      <nav class="header__nav nav">
+        <ul class="nav__list list-reset">
+          <li class="nav__item">
+            <button class="nav__burger btn-reset" type="button"></button>
+            <a href="#" class="nav__link">КАТАЛОГ</a>
+            <ul class="sub-menu__list list-reset">
+              <li class="nav__item">
+                <a href="#" class="nav__link"></a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">НОВОСТИ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">АКАДЕМИЯ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">НАШИ ПРОЕКТЫ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">ИСТОРИЯ РОСКОШИ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">КОНТАКТЫ</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__cart btn-reset" type="button"></button>
+    </div>
+
+    <button class="header__burger btn-reset" type="button"></button>
+  </div>
 </header>

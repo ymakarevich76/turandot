@@ -1,0 +1,17 @@
+.address {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -27px;
+
+    display: block;
+    width: 14px;
+    height: 20px;
+
+    background: url("../img/icon/location_icon.png") no-repeat center center;
+    background-size: 100%;
+  }
+}

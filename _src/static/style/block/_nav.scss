@@ -1,0 +1,39 @@
+.nav {
+}
+
+.nav__list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav__item {
+  &:not(:last-child) {
+    margin-right: 32px;
+
+    @media (max-width: $xl) {
+      margin-right: 27px;
+    }
+
+    @media (max-width: $xl) {
+      margin-right: 23px;
+    }
+  }
+}
+
+.nav__link {
+  font-size: 14px;
+  color: $c-main;
+
+  @media (max-width: $xl) {
+    font-size: 12px;
+  }
+}
+
+.nav__burger {
+  width: 18px;
+  height: 10px;
+  margin-right: 14px;
+
+  background: url("../img/icon/burger_icon.png") no-repeat center center;
+  background-size: 100%;
+}

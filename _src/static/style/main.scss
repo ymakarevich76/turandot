@@ -5,7 +5,6 @@
 
 // ///////////////////////////////////////// block
 @import "block/container";
-@import "block/section";
 
 @import "block/button/btn-reset";
 @import "block/button/btn";
@@ -20,6 +19,13 @@
 @import "block/logo";
 // @import "block/breadcrumb";
 @import "block/title/title";
+
+
+@import "block/phone";
+@import "block/search";
+
+@import "block/address";
+@import "block/nav";
 
 // @import "block/form/form";
 // @import "block/form/form-group";

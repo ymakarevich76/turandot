@@ -1,0 +1,38 @@
+.phone {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -20px;
+
+    display: block;
+    width: 17px;
+    height: 18px;
+
+    background: url("../img/icon/phone_icon.png") no-repeat center center;
+    background-size: 100%;
+
+    @media (max-width: 675px) {
+      left: 0;
+    }
+  }
+}
+
+.phone__link {
+  color: $c-main;
+
+  &:not(:last-child) {
+    @media (max-width: 675px) {
+      margin-right: 5px;
+    }
+  }
+
+  @media (max-width: 675px) {
+    font-size: $fz-secondary;
+  }
+}

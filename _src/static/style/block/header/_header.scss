@@ -1,2 +1,152 @@
 .header {
+  padding-top: 30px;
+
+  background-color: #f9f9f9;
+}
+
+.header__container {
+  position: relative;
+}
+
+.header__top {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 16px;
+
+  @media (max-width: 675px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.header__logo {
+  margin-top: -10px;
+  // margin-right: 28px;
+  margin-right: 3%;
+
+  @media (max-width: 675px) {
+    order: -1;
+    margin-right: 0;
+    margin-bottom: 6px;
+  }
+}
+
+.header__search {
+  width: 37%;
+  margin-right: auto;
+  // margin-right: 8%;
+
+  @media (max-width: $xl) {
+    width: 31%;
+    // margin-right: 6%;
+  }
+
+  @media (max-width: $md) {
+    width: 43%;
+  }
+
+  @media (max-width: 675px) {
+    order: 1;
+    width: 100%;
+  }
+}
+
+.header__address {
+  margin-right: auto;
+
+  @media (max-width: $lg) {
+    display: none;
+  }
+}
+
+.header__phone {
+  margin-right: auto;
+  // margin-right: 7%;
+
+  @media (max-width: $xl) {
+    // margin-right: 5%;
+  }
+
+  @media (max-width: 675px) {
+    flex-direction: row;
+    justify-content: center;
+    order: 0;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: $ss) {
+    justify-content: flex-end;
+  }
+}
+
+.header__address {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__arrow {
+  width: 23px;
+  height: 13px;
+
+  background: url("../img/icon/down_arrow.png") no-repeat center center;
+  background-size: 100%;
+
+  @media (max-width: 675px) {
+    position: absolute;
+    top: 5px;
+    right: 18px;
+  }
+}
+
+.header__bottom {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.header__nav {
+  margin-right: auto;
+
+  @media (max-width: 675px) {
+    display: none;
+  }
+}
+
+.header__nav .nav__link {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+
+.header__cart {
+  width: 21px;
+  height: 23px;
+
+  background: url("../img/icon/cart.png") no-repeat center center;
+  background-size: 100%;
+
+  @media (max-width: 675px) {
+    position: absolute;
+    top: 0;
+    right: 55px;
+  }
+}
+
+.header__burger {
+  display: none;
+
+  @media (max-width: 675px) {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+
+    display: block;
+    width: 31px;
+    height: 17px;
+
+    background: url("../img/icon/burger_icon-mob.png") no-repeat center center;
+    background-size: 100%;
+  }
 }
