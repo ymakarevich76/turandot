@@ -1,11 +1,12 @@
 .address {
   position: relative;
+  padding-left: 30px;
 
   &::after {
     content: "";
     position: absolute;
     top: 0;
-    left: -27px;
+    left: 0;
 
     display: block;
     width: 14px;

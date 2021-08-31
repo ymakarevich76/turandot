@@ -11,13 +11,10 @@ $c-white: #fff;
 $c-accent: #bd9f59;
 
 // //////////////////////////////////////// breakpoints
-$sl: 1499.98px;
-// $xl: 1199.98px;
-$xl: 1023.98px;
+$xl: 1199.98px;
 $lg: 991.98px;
 $md: 767.98px;
-$sm: 675.98px;
-// $sm: 575.98px;
+$sm: 575.98px;
 $xs: 425.98px;
 $ss: 359.98px;
 
@@ -29,7 +26,7 @@ $ss: 359.98px;
 }
 
 .col {
-  margin: 0 15px;
+  margin: 0 15px ;
 }
 
 $gap: 30px;
@@ -45,3 +42,16 @@ $c-4: calc(33.333333% - #{$gap});
 $c-3: calc(25% - #{$gap});
 $c-2: calc(16.666667% - #{$gap});
 $c-1: calc(8.333333% - #{$gap});
+
+
+.test {
+}
+
+.test__item {
+  width: $c-3;
+  margin-bottom: 30px;
+
+  @media (max-width: $lg) {
+    width: $c-4;
+  }
+}
