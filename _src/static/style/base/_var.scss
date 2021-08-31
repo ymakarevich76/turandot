@@ -1,20 +1,23 @@
 // //////////////////////////////////////// font-family
-$ff-main: "Roboto", sans-serif;
+$ff-main: "SegoeUI", sans-serif;
 
 // //////////////////////////////////////// font-size
-$fz-main: 16px;
+$fz-main: 14px;
+$fz-secondary: 16px;
 
-// //////////////////////////////////////// colors 
-$c-main: #000;
-$c-secondary: gray;
-$c-accent: orange;
+// //////////////////////////////////////// colors
+$c-main: #636363;
+$c-white: #fff;
+$c-accent: #bd9f59;
 
 // //////////////////////////////////////// breakpoints
 $sl: 1499.98px;
-$xl: 1199.98px;
+// $xl: 1199.98px;
+$xl: 1023.98px;
 $lg: 991.98px;
 $md: 767.98px;
-$sm: 575.98px;
+$sm: 675.98px;
+// $sm: 575.98px;
 $xs: 425.98px;
 $ss: 359.98px;
 

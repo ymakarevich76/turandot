@@ -1,2 +1,13 @@
-.title {
+.title-1 {
+}
+
+.title-2 {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: $fz-secondary;
+  line-height: 1.5;
+  color: $c-main;
+  text-transform: uppercase;
+  letter-spacing: .05em;
 }
