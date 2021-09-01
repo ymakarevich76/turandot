@@ -1,2 +1,19 @@
 .btn {
+  min-width: 180px;
+  padding: 15px 30px;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  text-align: center;
+  color: $c-accent;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+
+  border: 1px solid $c-accent;
+
+  @media (max-width: $xl) {
+    font-size: 12px;
+  }
 }

@@ -1,0 +1,87 @@
+.insert {
+  margin-bottom: 40px;
+
+  @media (max-width: $md) {
+    margin-bottom: 20px;
+  }
+}
+
+.insert__container {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 350px;
+
+  background: url("../img/miniature/main.jpg") no-repeat center center;
+  background-size: 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, .3);
+  }
+
+
+  @media (max-width: $lg) {
+    height: 280px;
+  }
+
+  @media (max-width: $md) {
+    height: 150px;
+  }
+}
+
+.insert__title {
+  position: relative;
+  z-index: 100;
+
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-weight: 400;
+  font-size: 60px;
+  text-align: center;
+  color: $c-white;
+  text-transform: uppercase;
+  font-style: $ff-main;
+  letter-spacing: .05em;
+
+  @media (max-width: $lg) {
+    font-size: 48px;
+  }
+
+  @media (max-width: $md) {
+    font-size: 36px;
+  }
+}
+
+.insert__text {
+  position: relative;
+  z-index: 100;
+
+  margin: 0;
+
+  font-weight: 400;
+  font-size: $fz-secondary;
+  text-align: center;
+  color: $c-white;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+
+  @media (max-width: $lg) {
+    font-size: 14px;
+  }
+
+  @media (max-width: $md) {
+    font-size: 12px;
+  }
+}

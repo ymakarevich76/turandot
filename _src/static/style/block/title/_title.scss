@@ -1,4 +1,50 @@
 .title-1 {
+  position: relative;
+
+  margin: 0;
+
+  font-weight: 700;
+  font-size: $fz-secondary;
+  line-height: 1.5;
+  font-family: $ff-main;
+  text-align: center;
+  color: $c-main;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+
+  @media (max-width: $md) {
+    font-size: 14px;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+
+    display: block;
+    width: 44%;
+    height: 1px;
+
+    background-color: #ddd;
+    transform: translate(0, -50%);
+
+    @media (max-width: $lg) {
+      width: 42%;
+    }
+
+    @media (max-width: $md) {
+      width: 29%;
+    }
+  }
+
+  &::after {
+    left: 0;
+  }
+
+  &::before {
+    right: 0;
+  }
 }
 
 .title-2 {
@@ -10,4 +56,8 @@
   color: $c-main;
   text-transform: uppercase;
   letter-spacing: .05em;
+
+  @media (max-width: $lg) {
+    font-size: $fz-main;
+  }
 }
