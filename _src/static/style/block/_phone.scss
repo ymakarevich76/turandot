@@ -3,12 +3,13 @@
 
   display: flex;
   flex-direction: column;
+  padding-left: 30px;
 
   &::after {
     content: "";
     position: absolute;
     top: 2px;
-    left: -20px;
+    left: 0;
 
     display: block;
     width: 17px;
@@ -17,7 +18,7 @@
     background: url("../img/icon/phone_icon.png") no-repeat center center;
     background-size: 100%;
 
-    @media (max-width: 675px) {
+    @media (max-width: $md) {
       left: 0;
     }
   }
@@ -27,12 +28,12 @@
   color: $c-main;
 
   &:not(:last-child) {
-    @media (max-width: 675px) {
+    @media (max-width: $md) {
       margin-right: 5px;
     }
   }
 
-  @media (max-width: 675px) {
+  @media (max-width: $md) {
     font-size: $fz-secondary;
   }
 }

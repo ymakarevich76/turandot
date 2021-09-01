@@ -13,7 +13,7 @@
   align-items: flex-start;
   padding-bottom: 16px;
 
-  @media (max-width: 675px) {
+  @media (max-width: $md) {
     flex-direction: column;
     align-items: center;
   }
@@ -24,7 +24,7 @@
   // margin-right: 28px;
   margin-right: 3%;
 
-  @media (max-width: 675px) {
+  @media (max-width: $md) {
     order: -1;
     margin-right: 0;
     margin-bottom: 6px;
@@ -34,18 +34,20 @@
 .header__search {
   width: 37%;
   margin-right: auto;
-  // margin-right: 8%;
 
   @media (max-width: $xl) {
     width: 31%;
-    // margin-right: 6%;
   }
 
-  @media (max-width: $md) {
+  @media (max-width: $lg) {
     width: 43%;
   }
 
-  @media (max-width: 675px) {
+  @media (max-width: $md) {
+
+  }
+
+  @media (max-width: $md) {
     order: 1;
     width: 100%;
   }
@@ -61,17 +63,14 @@
 
 .header__phone {
   margin-right: auto;
-  // margin-right: 7%;
 
   @media (max-width: $xl) {
-    // margin-right: 5%;
   }
 
-  @media (max-width: 675px) {
+  @media (max-width: $md) {
     flex-direction: row;
     justify-content: center;
     order: 0;
-    width: 100%;
     margin-right: 0;
     margin-bottom: 15px;
   }
@@ -84,6 +83,7 @@
 .header__address {
   display: flex;
   flex-direction: column;
+  margin-right: 30px;
 }
 
 .header__arrow {
@@ -93,7 +93,7 @@
   background: url("../img/icon/down_arrow.png") no-repeat center center;
   background-size: 100%;
 
-  @media (max-width: 675px) {
+  @media (max-width: $md) {
     position: absolute;
     top: 5px;
     right: 18px;
@@ -104,12 +104,16 @@
   display: flex;
   align-items: center;
   padding-bottom: 10px;
+
+  @media (max-width: $md) {
+    padding-bottom: 0;
+  }
 }
 
 .header__nav {
   margin-right: auto;
 
-  @media (max-width: 675px) {
+  @media (max-width: $md) {
     display: none;
   }
 }
@@ -127,7 +131,7 @@
   background: url("../img/icon/cart.png") no-repeat center center;
   background-size: 100%;
 
-  @media (max-width: 675px) {
+  @media (max-width: $md) {
     position: absolute;
     top: 0;
     right: 55px;
@@ -137,7 +141,7 @@
 .header__burger {
   display: none;
 
-  @media (max-width: 675px) {
+  @media (max-width: $md) {
     position: absolute;
     top: 5px;
     left: 10px;
