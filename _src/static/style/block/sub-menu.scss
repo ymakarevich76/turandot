@@ -1,0 +1,11 @@
+.sub-menu {
+  display: flex;
+  flex-wrap: wrap;
+  // position: absolute;
+  width: 100%;
+  max-height: 490px;
+}
+
+.sub-menu__list {
+  width: 33%;
+}

@@ -28,7 +28,44 @@
         <span class="address__parking">бесплатная парковка</span>
       </div>
 
-      <button class="header__arrow btn-reset" type="button"></button>
+      <div class="header__arrow-wrap">
+        <button class="header__arrow btn-reset" type="button"></button>
+        <div class="modal__container">
+          <div class="modal__left">
+            <img src="static/img/map.png" alt="Карта">
+          </div>
+
+          <div class="modal__right">
+            <div class="modal__time time">
+              Работаем ежедневно с 12:00 до 23:00
+            </div>
+            <div class="modal__email email">
+              <a class="email__link" href="#">turandot-antique@maison-dellos.com
+              </a>
+            </div>
+            <div class="modal__social">
+              <h2 class="modal__social-title title-2">Мы в социальных сетях:</h2>
+              <div class="social">
+                <a href="#" class="social__link">
+                  <img class="social__img" src="static/img/icon/facebook_icon.png" alt="Фейсбук">
+                </a>
+                <a href="#" class="social__link">
+                  <img class="social__img" src="static/img/icon/instagram_icon.png" alt="Инстаграм">
+                </a>
+                <a href="#" class="social__link">
+                  <img class="social__img" src="static/img/icon/pinterest_icon.png" alt="Пинтерест">
+                </a>
+              </div>
+            </div>
+
+            <div class="modal__wrap-btn">
+              <button type="button" class="modal__btn btn btn-reset">Все категории</button>
+            </div>
+          </div>
+          <!--/modal__right-->
+        </div>
+        <!--/modal__container-->
+      </div>
     </div>
     <!--/header-top-->
 
@@ -36,13 +73,191 @@
       <nav class="header__nav nav">
         <ul class="nav__list list-reset">
           <li class="nav__item">
-            <button class="nav__burger btn-reset" type="button"></button>
-            <a href="#" class="nav__link">КАТАЛОГ</a>
-            <ul class="sub-menu__list list-reset">
-              <li class="nav__item">
-                <a href="#" class="nav__link"></a>
-              </li>
-            </ul>
+            <a href="#" class="nav__link">
+              <div class="nav__burger icon-nav">
+                <span></span>
+              </div>
+              КАТАЛОГ
+            </a>
+            <div class="sub-menu">
+              <ul class="sub-menu__list list-reset">
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Антикварные подарки</h2>
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    Корпоративные подарки
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Антикварные картины</h2>
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    Европа
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    Россия
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Вазы, кашпо</h2>
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Венская бронза</h2>
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Винтаж</h2>
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    Аксессуары
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    Бижутерия
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Зеркала</h2>
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    Настенные
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    Настольные
+                  </a>
+                </li>
+              </ul>
+              <ul class="sub-menu__list list-reset">
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Мебель</h2>
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    Диваны, Кресла и Стулья
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    Кабинеты
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    Комоды
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    Кассапанки и Кассоне
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    Столы
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    Тумбы, Консоли и Торшеры
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    Шкафы, витрины, этажерки
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Техника и приборы</h2>
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    Барометры, термометры
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    Корабельные принадлежности
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    Масштабные модели
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    Модели паровых машин
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    <h2 class="sub-menu__title title-2">Фарфор</h2>
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    Европа
+                  </a>
+                </li>
+
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">
+                    Россия
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="nav__item">
             <a href="#" class="nav__link">НОВОСТИ</a>
@@ -64,6 +279,8 @@
       <button class="header__cart btn-reset" type="button"></button>
     </div>
 
-    <button class="header__burger btn-reset" type="button"></button>
+    <div class="header__icon-menu icon__menu">
+      <span></span>
+    </div>
   </div>
 </header>

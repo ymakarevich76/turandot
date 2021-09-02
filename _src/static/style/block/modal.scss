@@ -1,0 +1,60 @@
+.modal {
+  position: relative;
+}
+
+.modal__container {
+  position: absolute;
+  top: 38px;
+  right: 30px;
+  z-index: 200;
+
+  display: flex;
+  display: none;
+  justify-content: flex-end;
+  max-width: 953px;
+  padding: 15px 15px 20px 20px;
+
+  background-color: $c-white;
+}
+
+.modal__left {
+  width: 70%;
+  padding-right: 50px;
+}
+
+.modal__right {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  width: calc(30% - 50px);
+  padding-top: 4px;
+}
+
+.modal__social {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: auto;
+}
+
+.modal__time {
+  margin-bottom: 27px;
+}
+
+.modal__email {
+  margin-bottom: 70px;
+}
+
+.modal__email .email__link {
+  font-weight: 300;
+}
+
+.modal__social-title {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.modal__btn {
+  min-width: 284px;
+}
