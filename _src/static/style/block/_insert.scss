@@ -6,7 +6,7 @@
   }
 }
 
-.insert__container {
+.insert__inner {
   position: relative;
 
   display: flex;
@@ -29,7 +29,6 @@
 
     background-color: rgba(0, 0, 0, .3);
   }
-
 
   @media (max-width: $lg) {
     height: 280px;

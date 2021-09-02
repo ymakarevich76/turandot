@@ -4,9 +4,11 @@
 <main class="main">
   <!-- //////////////////////////////////////////////////////////  -->
   <section class="insert">
-    <div class="container insert__container">
-      <h1 class="insert__title">TVRANDOT</h1>
-      <p class="insert__text">Антикварная галерея «Турандот Антик»</p>
+    <div class="container">
+      <div class="insert__inner">
+        <h1 class="insert__title">TVRANDOT</h1>
+        <p class="insert__text">Антикварная галерея «Турандот Антик»</p>
+      </div>
     </div>
   </section>
 
@@ -69,6 +71,146 @@
 
       <div class="catalog__wrap-btn">
         <button type="button" class="catalog__btn btn btn-reset">Все категории</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div class="container">
+      <h2 class="gallery__title title-1">О галерее</h2>
+      <div class="gallery__wrap">
+        <div class="gallery__wrap-row row">
+          <picture class="gallery__left col">
+            <source srcset="static/img/gallery/1-mob.jpg" media="(max-width: 767px)">
+            <source srcset="static/img/gallery/1-tab.jpg" media="(max-width: 991px)">
+            <source srcset="static/img/gallery/1-lg.jpg" media="(max-width: 1199px)">
+            <img src="static/img/gallery/1.jpg" alt="Галерея">
+          </picture>
+
+
+          <div class="gallery__right col">
+            <p class="gallery__text">В старинном двухэтажном особняке с мезонином, в центре Москвы, расположилась самая
+              красивая антикварная галерея города - «Турандот Антик». Антиквариат, представленный здесь, может
+              рассказать
+              вам историю четырех столетий: от флорентийских сплетен XVI века до закулисных тайн Домов Мод XX века.
+              <span class="gallery__text gallery__text--hidden">
+                Уникальные произведения декоративно-прикладного искусства, <span
+                  class="gallery__text gallery__text--line">живопись</span>, <span
+                  class="gallery__text gallery__text--line">ювелирные изделия</span> и
+                другие сокровища
+                -
+                все это вы сможете найти в галерее «Турандот Антик». В коллекции галереи также представлены предметы
+                эпохи
+                Модерна, Ар-деко, <span class="gallery__text gallery__text--line">винтажные украшения</span> и
+                аксессуары
+                второй половины
+                ХХ века. </span>
+            </p>
+            <button type="button" class="gallery__btn btn btn-reset">Подробнее</button>
+          </div>
+        </div>
+      </div>
+      <!--/gallery-wrap-->
+    </div>
+  </section>
+
+  <section class="arrivals">
+    <div class="container">
+      <h2 class="arrivals__title title-1">Новые поступления</h2>
+
+
+      <div class="arrivals__list row">
+        <a href="#" class="arrivals__item col">
+          <div class="arrivals__item-wrap-img">
+            <img src="static/img/catalog-main/arrivals-1.png" alt="Модель электростанции Maxwell Hemmens">
+          </div>
+          <div class="arrivals__desc">
+            <h3 class="arrivals__item-title title-3">Модель электростанции. Maxwell Hemmens</h3>
+            <p class="arrivals__cost">цена по запросу</p>
+          </div>
+        </a>
+        <a href="#" class="arrivals__item col">
+          <div class="arrivals__item-wrap-img">
+            <img src="static/img/catalog-main/arrivals-2.png" alt="Консоли парные">
+          </div>
+          <div class="arrivals__desc">
+            <h3 class="arrivals__item-title title-3">Консоли парные</h3>
+            <p class="arrivals__cost">526 692 ₽</p>
+          </div>
+        </a>
+        <a href="#" class="arrivals__item col">
+          <div class="arrivals__item-wrap-img">
+            <img src="static/img/catalog-main/arrivals-3.png" alt="Консоли - торшеры парные">
+          </div>
+          <div class="arrivals__desc">
+            <h3 class="arrivals__item-title title-3">Консоли - торшеры парные</h3>
+            <p class="arrivals__cost">351 128 ₽</p>
+          </div>
+        </a>
+        <a href="#" class="arrivals__item col">
+          <div class="arrivals__item-wrap-img">
+            <img src="static/img/catalog-main/arrivals-4.png" alt="Банкетка">
+          </div>
+          <div class="arrivals__desc">
+            <h3 class="arrivals__item-title title-3">Банкетка</h3>
+            <p class="arrivals__cost">цена по запросу</p>
+          </div>
+        </a>
+      </div>
+      <div class="arrivals__wrap-btn">
+        <button type="button" class="arrivals__btn btn btn-reset">Открыть каталог</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="inner-pages">
+    <div class="container">
+      <h2 class="visually-hidden">Внутренние страницы</h2>
+
+      <div class="inner-pages__list row">
+        <a href="#" class="inner-pages__item col">
+          <div class="inner-pages__wrap-img">
+            <img class="inner-pages__img" src="static/img/miniature/history.jpg" alt="История роскоши">
+          </div>
+          <div class="inner-pages__desc">
+            <h2 class="inner-pages__title title-2">История роскоши</h2>
+            <p class="inner-pages__text">Люди увлекались собиранием красивых и диковинных предметов с древних
+              времен.
+            </p>
+          </div>
+        </a>
+        <a href="#" class="inner-pages__item col">
+          <div class="inner-pages__wrap-img">
+            <img class="inner-pages__img" src="static/img/miniature/academy.jpg" alt="Академия">
+          </div>
+          <div class="inner-pages__desc">
+            <h2 class="inner-pages__title title-2">Академия</h2>
+          </div>
+        </a>
+        <a href="#" class="inner-pages__item col">
+          <div class="inner-pages__wrap-img">
+            <img class="inner-pages__img" src="static/img/miniature/news.jpg" alt="Новости">
+          </div>
+          <div class="inner-pages__desc">
+            <h2 class="inner-pages__title title-2">Новости</h2>
+          </div>
+        </a>
+        <a href="#" class="inner-pages__item col">
+          <div class="inner-pages__wrap-img">
+            <img class="inner-pages__img" src="static/img/miniature/projects.jpg" alt="Наши проекты">
+          </div>
+          <div class="inner-pages__desc">
+            <h2 class="inner-pages__title title-2">Наши проекты</h2>
+          </div>
+        </a>
+        <a href="#" class="inner-pages__item col">
+          <div class="inner-pages__wrap-img">
+            <img class="inner-pages__img" src="static/img/miniature/contacts.jpg" alt="Как нас найти">
+          </div>
+          <div class="inner-pages__desc">
+            <h2 class="inner-pages__title title-2">Как нас найти?</h2>
+          </div>
+        </a>
       </div>
     </div>
   </section>

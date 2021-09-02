@@ -13,7 +13,7 @@
   letter-spacing: .05em;
 
   @media (max-width: $md) {
-    font-size: 14px;
+    // font-size: 14px;
   }
 
   &::after,
@@ -53,11 +53,28 @@
   font-weight: 600;
   font-size: $fz-secondary;
   line-height: 1.5;
+  font-family: $ff-main;
   color: $c-main;
   text-transform: uppercase;
   letter-spacing: .05em;
 
   @media (max-width: $lg) {
     font-size: $fz-main;
+  }
+}
+
+.title-3 {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 1.2;
+  text-align: center;
+  color: $c-main;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+
+  @media (max-width: $xl) {
+    font-size: 12px;
   }
 }
