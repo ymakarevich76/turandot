@@ -17,6 +17,9 @@
 
     background: url("../img/icon/phone_icon.png") no-repeat center center;
     background-size: 100%;
+    opacity: 1;
+
+    transition: .3s;
 
     @media (max-width: $md) {
       left: 0;
@@ -27,13 +30,22 @@
 .phone__link {
   color: $c-main;
 
+  @media (max-width: $md) {
+    font-size: $fz-secondary;
+  }
+
   &:not(:last-child) {
     @media (max-width: $md) {
       margin-right: 5px;
     }
   }
 
-  @media (max-width: $md) {
-    font-size: $fz-secondary;
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
   }
+}
+
+.phone:hover::after {
+  opacity: .6;
 }

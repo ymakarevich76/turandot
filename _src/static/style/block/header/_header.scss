@@ -27,7 +27,6 @@
 
 .header__logo {
   margin-top: -10px;
-  // margin-right: 28px;
   margin-right: 2.5%;
   @media (max-width: $md) {
     order: -1;
@@ -87,25 +86,58 @@
 }
 
 .header__arrow-wrap {
-  padding: 15px;
+  padding: 5px 15px 20px;
 
-  // transition: .3s;
+  transition: .3s;
+
+  @media (max-width: $md) {
+    padding: 0;
+  }
 
   &:hover {
     background-color: $c-white;
   }
-
-  &:hover .modal__container {
-    display: flex;
-  }
 }
 
 .header__arrow {
+  position: relative;
+  top: -4px;
+  right: 0;
+  z-index: 70;
+
+  display: block;
   width: 23px;
   height: 13px;
 
-  background: url("../img/icon/down_arrow.png") no-repeat center center;
-  background-size: 100%;
+  cursor: pointer;
+
+  transition: .3s;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+
+    width: 70%;
+    height: 10%;
+
+    background-color: $c-accent;
+
+    transition: .3s;
+  }
+
+  &::before {
+    left: 10px;
+
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    left: 0;
+
+    transform: rotate(45deg);
+  }
 
   @media (max-width: $md) {
     position: absolute;
@@ -114,7 +146,32 @@
   }
 }
 
+.header__arrow-wrap:hover .header__arrow::before {
+  top: 10px;
+
+  transform: rotate(45deg);
+}
+
+.header__arrow-wrap:hover .header__arrow::after {
+  top: 10px;
+
+  transform: rotate(-45deg);
+}
+
+.header__arrow-wrap:hover .modal {
+  visibility: visible;
+  opacity: 1;
+
+  pointer-events: all;
+}
+
+.header__arrow.active {
+  transform: rotate(-180deg);
+}
+
 .header__bottom {
+  position: relative;
+
   display: flex;
   align-items: center;
   padding-bottom: 10px;
@@ -131,27 +188,81 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 100;
 
     width: 100%;
     height: 100%;
-    padding: 100px 30px 30px 30px;
+    // padding: 35px 0 35px;
+    // overflow: auto;
 
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .5);
+    transform: translate(100%, 0);
 
-    transition: left .3s ease 0s;
+    transition: .3s;
   }
+
+  // &:before {
+  //   @media (max-width: $md) {
+  //     content: "";
+  //     position: fixed;
+  //     top: 0;
+  //     left: 0;
+
+  //     width: 100%;
+  //     height: 100px;
+
+  //     background-color: #f9f9f9;
+  //   }
+  // }
+}
+
+.header__nav.active {
+  transform: translate(0, 0);
 }
 
 .header__nav .nav__list {
-  position: relative;
-}
-
-.header__nav .nav__item {
   &:not(:last-child) {
-    margin-bottom: 30px;
+    @media(max-width: $md) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media(max-width: $md) {
+    flex-direction: column;
+    padding-top: 25px;
+
+    background-color: $c-white;
   }
 }
 
+.header__nav .nav__item {
+  padding: 0 16px;
+  // padding-bottom: 10px;
+
+  @media (max-width: $lg) {
+    padding: 12px;
+  }
+
+  @media (max-width: $lg) {
+    padding-left: 50px;
+  }
+
+  &:first-child {
+    padding-left: 35px;
+
+    @media (max-width: $lg) {
+      padding-left: 30px;
+    }
+
+    @media (max-width: $md) {
+      padding-left: 50px;
+    }
+  }
+}
+
+.header__nav .nav__item:first-child .nav__link {
+  position: relative;
+}
 
 .header__nav .nav__link {
   text-transform: uppercase;
@@ -160,8 +271,11 @@
   @media (max-width: $xl) {
     font-size: 12px;
   }
-}
 
+  @media (max-width: $md) {
+    font-size: $fz-secondary;
+  }
+}
 
 .header__cart {
   width: 21px;
@@ -172,7 +286,7 @@
 
   @media (max-width: $md) {
     position: absolute;
-    top: 0;
+    top: -127px;
     right: 55px;
   }
 }

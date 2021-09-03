@@ -48,7 +48,16 @@
     width: calc(50% - 10px);
     margin-bottom: 30px;
   }
+
+  &:hover {
+    text-decoration: none;
+  }
 }
+
+.arrivals__item:hover .arrivals__item-title {
+  color: $c-accent;
+}
+
 .arrivals__item.col {
   @media (max-width: $md) {
     margin: 0 5px 20px;

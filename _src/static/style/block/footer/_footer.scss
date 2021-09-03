@@ -109,6 +109,10 @@
   @media (max-width: $lg) {
     font-size: 12px;
   }
+
+  &:hover {
+    color: $c-accent;
+  }
 }
 
 .footer__logo {
@@ -263,6 +267,18 @@
 
   @media (max-width: $md) {
     font-size: 12px;
+  }
+
+  &:hover {
+    color: $c-accent;
+  }
+}
+
+.footer__email .footer__email {
+  color: #909090;
+
+  &:hover {
+    color: $c-accent;
   }
 }
 

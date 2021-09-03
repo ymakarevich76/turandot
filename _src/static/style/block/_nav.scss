@@ -7,35 +7,88 @@
 }
 
 .nav__item {
-  padding: 0 20px;
-
-  &:first-child {
-    position: relative;
-
-    padding-left: 50px;
-  }
-
-  &:not(:last-child) {
-    margin-right: 32px;
-
-    @media (max-width: $xl) {
-      margin-right: 27px;
-    }
-
-    @media (max-width: $xl) {
-      margin-right: 23px;
-    }
+  &:hover .sub-menu {
+    visibility: visible;
+    opacity: 1;
   }
 }
 
 .nav__link {
   font-size: 14px;
   color: $c-main;
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
 }
 
 .nav__burger {
   position: absolute;
+  top: 50%;
+  left: -35px;
+  z-index: 150;
 
+  display: block;
   width: 18px;
   height: 10px;
+
+  transform: translate(0, -50%);
+  cursor: pointer;
+
+  @media (max-width: $md) {
+    display: none;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    height: 10%;
+
+    background-color: $c-main;
+
+    transition: .3s;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+}
+
+.nav__burger span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 100%;
+  height: 10%;
+
+  background-color: $c-main;
+  transform: scale(1) translate(0, -50%);
+
+  transition: .3s;
+}
+
+.nav__link:hover span {
+  transform: scale(0);
+}
+
+.nav__link:hover .nav__burger::before {
+  top: 50%;
+
+  transform: rotate(45deg) translate(0, -50%);
+}
+
+.nav__link:hover .nav__burger::after {
+  bottom: 50%;
+
+  transform: rotate(-45deg) translate(0, -50%);
 }

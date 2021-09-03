@@ -5,3 +5,14 @@
 .social__link {
   margin-right: 15px;
 }
+
+.social__svg {
+  width: 20px;
+  height: 20px;
+
+  fill: $c-main;
+
+  &:hover {
+    fill: $c-accent;
+  }
+}

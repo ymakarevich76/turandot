@@ -14,26 +14,48 @@
 
   &:hover,
   &:focus {
-    border-color: #a7a7a7;
+    border-color: $c-main;
     outline: none;
   }
 }
 
 .search__wrap-input {
   position: relative;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 13px;
+.search__btn {
+  position: absolute;
+  top: 50%;
+  right: 13px;
 
-    display: block;
-    width: 18px;
-    height: 18px;
+  display: block;
+  width: 18px;
+  height: 18px;
 
-    background: url("../img/icon/search_icon.png") no-repeat center center;
-    background-size: 100%;
-    transform: translate(0, -50%);
+  transform: translate(0, -50%);
+
+  &:focus {
+    outline: none;
+
+    fill: $c-accent;
   }
+
+  &:focus svg {
+    fill: $c-accent;
+  }
+}
+
+.search__btn svg {
+  width: 18px;
+  height: 18px;
+
+  fill: #b4b4b4;
+
+  &:hover {
+    fill: $c-accent;
+  }
+}
+
+.search__input:focus .search__btn:focus svg {
+  fill: $c-accent;
 }
