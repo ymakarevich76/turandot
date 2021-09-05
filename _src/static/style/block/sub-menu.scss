@@ -2,6 +2,7 @@
   position: absolute;
   top: 30px;
   left: 0;
+  right: 0;
   z-index: 200;
 
   padding-top: 13px;
@@ -14,7 +15,7 @@
 
   transition: .3s;
 
-  // pointer-events: none;
+  pointer-events: none;
 
   @media (max-width: $md) {
     display: none;
@@ -22,7 +23,7 @@
 }
 
 .sub-menu__wrap-col {
-  width: $c-4;
+  width: $c-3;
 }
 
 .sub-menu__wrap-item {
