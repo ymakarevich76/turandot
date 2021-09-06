@@ -1,12 +1,7 @@
 .header {
-  margin-bottom: 25px;
   padding-top: 30px;
 
   background-color: #f9f9f9;
-
-  @media (max-width: $md) {
-    margin-bottom: 20px;
-  }
 }
 
 .header__container {
@@ -16,7 +11,7 @@
 .header__top {
   display: flex;
   align-items: flex-start;
-  padding-bottom: 16px;
+  // padding-bottom: 16px;
 
   @media (max-width: $md) {
     flex-direction: column;
@@ -95,7 +90,11 @@
   }
 
   &:hover {
+    z-index: 250;
+
     background-color: $c-white;
+    border: 1px solid #e3d9d3;
+    border-bottom-color: transparent;
   }
 }
 
@@ -146,12 +145,14 @@
   }
 }
 
+.header__arrow-wrap:active .header__arrow::before,
 .header__arrow-wrap:hover .header__arrow::before {
   top: 10px;
 
   transform: rotate(45deg);
 }
 
+.header__arrow-wrap:active .header__arrow::after,
 .header__arrow-wrap:hover .header__arrow::after {
   top: 10px;
 
@@ -159,14 +160,11 @@
 }
 
 .header__arrow-wrap:hover .modal {
+  border: 1px solid #e3d9d3;
   visibility: visible;
   opacity: 1;
 
   pointer-events: all;
-}
-
-.header__arrow.active {
-  transform: rotate(-180deg);
 }
 
 .header__bottom {
@@ -174,7 +172,6 @@
 
   display: flex;
   align-items: center;
-  padding-bottom: 10px;
 
   @media (max-width: $md) {
     padding-bottom: 0;
@@ -230,14 +227,14 @@
   @media(max-width: $md) {
     flex-direction: column;
     padding-top: 25px;
+    padding-bottom: 25px;
 
     background-color: $c-white;
   }
 }
 
 .header__nav .nav__item {
-  padding: 0 16px;
-  // padding-bottom: 10px;
+  padding: 20px 16px 10px;
 
   @media (max-width: $lg) {
     padding: 12px;
@@ -260,11 +257,30 @@
   }
 }
 
-.header__nav .nav__item:first-child .nav__link {
-  position: relative;
+// .header__nav .nav__item:first-child .nav__link {
+//   position: relative;
+// }
+
+.header__nav .nav__item:first-child:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -15px;
+  z-index: 150;
+
+  display: block;
+  width: 12%;
+  height: 100%;
+
+  background-color: $c-white;
+  border: 1px solid #e3d9d3;
+  border-bottom-color: transparent;
 }
 
 .header__nav .nav__link {
+  position: relative;
+  z-index: 150;
+
   text-transform: uppercase;
   letter-spacing: .05em;
 
@@ -280,6 +296,7 @@
 .header__cart {
   width: 21px;
   height: 23px;
+  // margin-bottom: 10px;
 
   background: url("../img/icon/cart.png") no-repeat center center;
   background-size: 100%;

@@ -1,0 +1,10 @@
+.swiper-button-prev,
+.swiper-button-next {
+  top: 44%;
+
+  color: #000;
+
+  &::after {
+    font-size: 38px;
+  }
+}

@@ -1,4 +1,7 @@
 .directory {
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #ddd;
 }
 
 .directory__title {
@@ -10,7 +13,7 @@
 .directory__desc {
   max-width: 980px;
   margin: 0 auto;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 
   font-weight: 400;
   font-size: $fz-main;
@@ -18,4 +21,36 @@
   font-family: $ff-main;
   text-align: center;
   color: $c-main;
+}
+
+.directory__slider {
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+
+// .directory__wrap.swiper-wrapper {
+//   max-width: 1110px;
+//   margin: 0 auto;
+// }
+
+.directory__slide {
+  padding: 30px;
+  padding-bottom: 10px;
+
+  background-color: #f9f9f8;
+  border: 1px solid #e5d9bd;
+
+  &:hover {
+    text-decoration: none;
+
+    background-color: #f1eadb;
+  }
+}
+
+.directory__slide:hover .directory__item {
+  text-decoration: none;
+}
+
+.directory__slide.swiper-slide {
+  height: auto;
 }
