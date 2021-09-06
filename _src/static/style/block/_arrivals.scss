@@ -54,6 +54,12 @@
   }
 }
 
+.arrivals__item-title {
+  @media (max-width: $xl) {
+    font-size: 12px;
+  }
+}
+
 .arrivals__item:hover .arrivals__item-title {
   color: $c-accent;
 }

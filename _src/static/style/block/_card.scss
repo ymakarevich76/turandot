@@ -56,6 +56,12 @@
   }
 }
 
+.card__title {
+  @media (max-width: $xl) {
+    font-size: 12px;
+  }
+}
+
 .card__cost {
   margin-top: auto;
   margin-bottom: 0;

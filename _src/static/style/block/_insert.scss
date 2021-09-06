@@ -1,8 +1,9 @@
 .insert {
+  margin-top: 20px;
   margin-bottom: 40px;
 
   @media (max-width: $md) {
-    margin-bottom: 20px;
+    margin: 20px 0;
   }
 }
 

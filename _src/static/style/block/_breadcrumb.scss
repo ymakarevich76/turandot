@@ -4,7 +4,11 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  padding-top: 13px;
+  padding-top: 11px;
+
+  @media (max-width: $lg) {
+    margin-bottom: 25px;
+  }
 
 
   &::after {
@@ -27,6 +31,10 @@
     font-size: 12px;
     font-family: $ff-main;
     color: $c-accent;
+
+    @media (max-width: $lg) {
+      font-size: 10px;
+    }
   }
 }
 
@@ -35,6 +43,10 @@
   font-size: 12px;
   font-family: $ff-main;
   color: $c-main;
+
+  @media (max-width: $lg) {
+    font-size: 10px;
+  }
 }
 
 .breadcrumb__link-el {

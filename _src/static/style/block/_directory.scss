@@ -1,13 +1,30 @@
-.directory {
-  padding-bottom: 10px;
+.directory .container {
+  position: relative;
 
-  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: .5px;
+
+    background-color: #ddd;
+  }
 }
 
 .directory__title {
   margin-bottom: 30px;
 
   font-size: 22px;
+
+  @media (max-width: $lg) {
+    font-size: 18px;
+  }
 }
 
 .directory__desc {
@@ -21,6 +38,17 @@
   font-family: $ff-main;
   text-align: center;
   color: $c-main;
+
+  @media (max-width: $xl) {
+    font-size: 12px;
+  }
+
+  @media (max-width: $lg) {
+    max-width: 660px;
+    margin-bottom: 27px;
+
+    line-height: 1.35;
+  }
 }
 
 .directory__slider {

@@ -13,10 +13,13 @@
   align-items: flex-start;
   // padding-bottom: 16px;
 
+  @media (max-width: $lg) {
+    padding-bottom: 10px;
+  }
+
   @media (max-width: $md) {
     flex-direction: column;
     align-items: center;
-    padding-bottom: 10px;
   }
 }
 
@@ -237,19 +240,15 @@
   padding: 20px 16px 10px;
 
   @media (max-width: $lg) {
-    padding: 12px;
+    padding: 12px 12px 9px;
   }
 
-  @media (max-width: $lg) {
+  @media (max-width: $md) {
     padding-left: 50px;
   }
 
   &:first-child {
     padding-left: 35px;
-
-    @media (max-width: $lg) {
-      padding-left: 30px;
-    }
 
     @media (max-width: $md) {
       padding-left: 50px;
