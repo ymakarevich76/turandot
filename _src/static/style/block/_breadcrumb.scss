@@ -1,9 +1,42 @@
 .breadcrumb {
   @extend .list-reset;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-top: 13px;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: .5px;
+
+    background-color: #ddd;
+  }
 }
 
 .breadcrumb__item {
+  &--current {
+    font-weight: 400;
+    font-size: 12px;
+    font-family: $ff-main;
+    color: $c-accent;
+  }
 }
 
 .breadcrumb__link {
+  font-weight: 400;
+  font-size: 12px;
+  font-family: $ff-main;
+  color: $c-main;
+}
+
+.breadcrumb__link-el {
+  padding: 0 8px;
 }

@@ -1,0 +1,72 @@
+.card.row {
+  @media (max-width: $md) {
+    margin: 0 -5px !important;
+  }
+}
+
+.card__item {
+  width: $c-3;
+
+  @media (max-width: $lg) {
+    width: calc(50% - 10px);
+    margin-bottom: 30px;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.card__item:hover .card__title {
+  color: $c-accent;
+}
+
+.card__item.col {
+  @media (max-width: $lg) {
+    margin: 0 5px 20px;
+  }
+}
+
+.card__wrap-img {
+  margin-bottom: 25px;
+
+  @media (max-width: $lg) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 22px;
+  }
+
+  @media (max-width: $md) {
+    margin-bottom: 15px;
+  }
+}
+
+.card__desc {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  min-height: 67px;
+
+  @media (max-width: $xl) {
+    min-height: 55px;
+  }
+
+  @media (max-width: $md) {
+    min-height: 72px;
+  }
+}
+
+.card__cost {
+  margin-top: auto;
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 1.2;
+  text-align: center;
+  color: $c-main;
+
+  @media (max-width: $xl) {
+    font-size: 12px;
+  }
+}

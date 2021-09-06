@@ -17,7 +17,7 @@
 
 @import "block/header/header";
 @import "block/logo";
-// @import "block/breadcrumb";
+@import "block/breadcrumb";
 @import "block/title/title";
 
 
@@ -39,6 +39,10 @@
 
 @import "block/sub-menu";
 @import "block/body-touch";
+
+@import "block/card";
+@import "block/directory";
+@import "block/category";
 
 
 // @import "block/form/form";

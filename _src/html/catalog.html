@@ -1,0 +1,43 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+@@include('block/breadcrumb.html')
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////  -->
+  <section class="directory">
+    <div class="container">
+      <div class="directory__title title-3">Мебель</div>
+      <div class="directory__desc">
+        Антикварная мебель из нашей галереи входила в обстановку жилых и парадных залов дворцов и городских особняков в
+        минувшие столетия. Особую ценность антикварной мебели из галереи «Турандот Антик» придает прекрасная
+        сохранность, донесшая до современности первоначальный облик предметов.
+      </div>
+
+      <div class="directory__slider swiper">
+        <div class="directory__wrap swiper-wrapper">
+          <div class="directory__slide swiper-slide">
+            <a href="#" class="directory__item category">
+              <div class="category__wrap-img">
+                <img src="static/img/directory/furniture/cabinets.jpg" alt="Кабинеты">
+              </div>
+              <h2 class="category__title title-2">Кабинеты</h2>
+            </a>
+          </div>
+          <div class="directory__slide swiper-slide">
+            <a href="#" class="directory__item category">
+              <div class="category__wrap-img">
+                <img src="static/img/directory/furniture/dressers.jpg" alt="Комоды">
+              </div>
+              <h2 class="category__title title-2">Комоды</h2>
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')
