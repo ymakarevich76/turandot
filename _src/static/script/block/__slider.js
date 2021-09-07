@@ -9,7 +9,8 @@ const swiper = new Swiper('.directory__slider', {
 
   breakpoints: {
     320: {
-      slidesPerView: 2,
+      slidesPerView: 1.9,
+      spaceBetween: 15,
     },
     768: {
       slidesPerView: 4,

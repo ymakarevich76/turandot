@@ -1,7 +1,19 @@
 .pagination {
   display: flex;
   align-items: center;
-  padding-bottom: 60px;
+  padding-bottom: 55px;
+
+  @media (max-width: $xl) {
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: $lg) {
+    padding-bottom: 40px;
+  }
+
+  @media (max-width: $md) {
+    padding-bottom: 35px;
+  }
 }
 
 .pagination__arrow svg {
@@ -29,6 +41,11 @@
   height: 42px;
 
   border: 1px solid $c-main;
+
+  @media (max-width: $md) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .pagination__page {
@@ -39,6 +56,16 @@
 
   &:not(:last-child) {
     margin-right: 10px;
+
+    @media (max-width: $md) {
+      margin-right: 8px;
+    }
+  }
+
+  &--current {
+    color: $c-white;
+
+    background-color: $c-accent;
   }
 }
 
@@ -65,6 +92,14 @@
   font-family: $ff-main;
   color: $c-main;
   text-transform: uppercase;
+
+  @media (max-width: $xl) {
+    font-size: $fz-secondary;
+  }
+
+  @media (max-width: $md) {
+    margin-left: 8px;
+  }
 
   &:hover {
     color: $c-accent;

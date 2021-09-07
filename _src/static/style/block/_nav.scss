@@ -18,7 +18,7 @@
   }
 
   .nav__item--submenu:hover & {
-    background-color: #fff;
+    background-color: $c-white;
     border-color: #e3d9d3;
     border-bottom: none;
   }

@@ -1,12 +1,7 @@
 .header {
-  margin-bottom: 25px;
   padding-top: 30px;
 
   background-color: #f9f9f9;
-
-  @media (max-width: $md) {
-    margin-bottom: 20px;
-  }
 }
 
 .header__container {
@@ -125,7 +120,7 @@
   }
 
   .header__arrow-wrap:hover & {
-    background-color: #fff;
+    background-color: $c-white;
     border-color: #e3d9d3;
     border-bottom: none;
   }

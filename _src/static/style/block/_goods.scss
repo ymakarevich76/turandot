@@ -1,5 +1,13 @@
 .goods {
-  padding-top: 53px;
+  padding-top: 30px;
+
+  @media (max-width: $lg) {
+    padding-top: 50px;
+  }
+
+  @media (max-width: $md) {
+    padding-top: 23px;
+  }
 }
 
 .goods__list {
