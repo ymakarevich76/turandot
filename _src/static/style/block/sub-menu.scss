@@ -1,25 +1,10 @@
 .sub-menu {
-  position: absolute;
-  top: 47px;
-  right: 0;
-  left: 0;
-  z-index: 200;
-
   padding-top: 13px;
 
   background-color: $c-white;
   border: 1px solid #e3d9d3;
-  transform: translate(0, 10%);
-  visibility: hidden;
-  opacity: 0;
-
-  transition: .3s;
-
-  pointer-events: none;
-
-  @media (max-width: $md) {
-    display: none;
-  }
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .sub-menu__wrap-col {
