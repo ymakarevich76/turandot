@@ -1,9 +1,12 @@
 .insert {
-  margin-top: 20px;
   margin-bottom: 40px;
 
+  @media (max-width: $lg) {
+    margin-bottom: 30px;
+  }
+
   @media (max-width: $md) {
-    margin: 20px 0;
+    margin-bottom: 20px;
   }
 }
 
@@ -75,7 +78,7 @@
   text-align: center;
   color: $c-white;
   text-transform: uppercase;
-  letter-spacing: .05em;
+  letter-spacing: .1em;
 
   @media (max-width: $lg) {
     font-size: 14px;
@@ -83,5 +86,13 @@
 
   @media (max-width: $md) {
     font-size: 12px;
+  }
+
+  br & {
+    display: none;
+
+    @media (max-width: $md) {
+      display: block;
+    }
   }
 }

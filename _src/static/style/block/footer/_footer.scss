@@ -38,7 +38,11 @@
 }
 
 .footer__top {
-  padding-bottom: 70px;
+  padding-bottom: 75px;
+
+  @media (max-width: $xl) {
+    padding-bottom: 73px;
+  }
 
   @media (max-width: $lg) {
     padding-bottom: 60px;
@@ -85,7 +89,7 @@
   margin-bottom: 20px;
 
   @media (max-width: $lg) {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
 }
 
@@ -96,7 +100,7 @@
 .footer__nav .nav__item {
   &:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 8px;
+    margin-bottom: 7px;
   }
 }
 
@@ -117,11 +121,11 @@
 
 .footer__logo {
   position: absolute;
-  bottom: 82px;
+  bottom: 70px;
   left: 32px;
 
   @media (max-width: $xl) {
-    bottom: 72px;
+    bottom: 58px;
     left: 16px;
   }
 
@@ -247,7 +251,7 @@
 .footer__phone,
 .footer__email,
 .footer__time {
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   padding-left: 42px;
 
   font-weight: 400;
@@ -274,7 +278,7 @@
   }
 }
 
-.footer__email .footer__email {
+.footer__email .email__link {
   color: #909090;
 
   &:hover {
@@ -286,7 +290,7 @@
   margin-bottom: 33px;
 
   @media (max-width: $xl) {
-    margin-bottom: 43px;
+    margin-bottom: 40px;
   }
 
   @media (max-width: $lg) {

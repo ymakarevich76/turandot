@@ -1,10 +1,10 @@
 .sub-menu {
+  display: flex;
+  flex-wrap: wrap;
   padding-top: 13px;
 
   background-color: $c-white;
   border: 1px solid #e3d9d3;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .sub-menu__wrap-col {
@@ -19,6 +19,11 @@
   font-size: $fz-main;
   line-height: 1.7;
   letter-spacing: 0;
+
+  @media (max-width: $xl) {
+    font-size: 12px;
+    line-height: 2;
+  }
 }
 
 .sub-menu__link {
@@ -30,4 +35,9 @@
   font-family: $ff-main;
   color: $c-main;
   letter-spacing: 0;
+
+  @media (max-width: $xl) {
+    font-size: 12px;
+    line-height: 2;
+  }
 }

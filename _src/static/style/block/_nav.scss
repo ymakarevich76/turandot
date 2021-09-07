@@ -9,19 +9,8 @@
 .nav__link {
   font-size: 14px;
   color: $c-main;
-  padding: 11px 15px 9px;
-  display: inline-block;
-  border-top: 1px solid transparent;
-  border-left: 1px solid transparent;
-  border-right: 1px solid transparent;
-  transition: .3s;
-  position: relative;
-  z-index: 300;
 
-  @media (max-width: $lg) {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+  transition: .3s;
 
   &:hover {
     color: $c-accent;
@@ -30,13 +19,14 @@
 
   .nav__item--submenu:hover & {
     background-color: #fff;
-    border-bottom: none;
     border-color: #e3d9d3;
+    border-bottom: none;
   }
 
   &--icon {
-    padding-left: 51px;
     position: relative;
+
+    padding-left: 51px;
 
     @media (max-width: $lg) {
       padding-left: 51px;
@@ -47,10 +37,18 @@
       position: absolute;
       top: 50%;
       left: 14px;
+
+      display: block;
       width: 20px;
       height: 20px;
-      background-color: #e8e8e8;
+
+      background: url("../img/icon/burger_icon.png") no-repeat center center;
+      background-size: 100%;
       transform: translateY(-50%);
+
+      @media (max-width: $md) {
+        display: none;
+      }
     }
   }
 }
@@ -128,17 +126,21 @@
 .nav__sub-menu {
   position: absolute;
   top: calc(100% - 1px);
-  left: 0;
   right: 0;
+  left: 0;
   z-index: 200;
+
   visibility: hidden;
   opacity: 0;
+
   transition: .2s;
+
   pointer-events: none;
 
   .nav__item:hover & {
     visibility: visible;
     opacity: 1;
+
     pointer-events: fill;
   }
 
@@ -146,4 +148,3 @@
     display: none;
   }
 }
-

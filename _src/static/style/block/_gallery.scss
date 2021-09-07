@@ -1,8 +1,8 @@
 .gallery {
-  margin-bottom: 37px;
+  margin-bottom: 35px;
 
   @media (max-width: $lg) {
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
 
   @media (max-width: $md) {
@@ -84,11 +84,13 @@
     margin-bottom: 30px;
 
     font-size: 12px;
-    line-height: 1.5;
+    line-height: 1.55;
   }
 
   @media (max-width: $lg) {
     margin-bottom: 35px;
+
+    line-height: 1.5;
   }
 
   @media (max-width: $md) {
