@@ -24,6 +24,10 @@
     font-size: 12px;
     line-height: 2;
   }
+
+  .sub-menu__link:hover & {
+    color: #000;
+  }
 }
 
 .sub-menu__link {
@@ -39,5 +43,10 @@
   @media (max-width: $xl) {
     font-size: 12px;
     line-height: 2;
+  }
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
   }
 }

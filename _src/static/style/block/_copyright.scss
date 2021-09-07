@@ -80,4 +80,9 @@
       order: 2;
     }
   }
+
+  &:hover:not(:first-child) {
+    color: $c-accent;
+    text-decoration: none;
+  }
 }
