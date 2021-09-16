@@ -20,3 +20,22 @@ const swiper = new Swiper('.directory__slider', {
     }
   }
 });
+
+let swiperImg = new Swiper('.product__slider', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  slidesPerView: 1,
+  autoheight: true,
+});
+
+let swiperThumb = new Swiper('.product__thumb-slider', {
+  slidesPerView: 3,
+  autoheight: true,
+  spaceBetween: 10,
+});
+
+
+swiperImg.controller.control = swiperThumb;
+swiperThumb.controller.control = swiperImg;

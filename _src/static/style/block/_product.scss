@@ -7,8 +7,17 @@
 
 .product__left {
   width: $c-6;
+}
+
+.product__slider-container {
+  margin-bottom: 20px;
+  padding: 0 95px;
 
   border: 1px solid #efefef;
+}
+
+.product__thumb-slide.swiper-slide {
+  height: auto;
 }
 
 .product__right {
@@ -78,6 +87,8 @@
   padding: 17px 10px;
 
   font-size: 22px;
+
+  background-color: $c-white;
 }
 
 .product__question-title {
@@ -92,6 +103,7 @@
 
   color: $c-main;
 
+  background-color: $c-white;
   border-color: $c-main;
 }
 
@@ -143,4 +155,70 @@
   color: $c-main;
   text-transform: uppercase;
   letter-spacing: .05em;
+}
+
+.product__row-bottom {
+  display: flex;
+  margin-top: 65px;
+  margin-bottom: 80px;
+}
+
+.product__desc-title {
+  margin-bottom: 20px;
+
+  text-transform: capitalize;
+}
+
+.product__desc-text {
+  // letter-spacing: .05em;
+  max-width: 840px;
+  margin: 0;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 1.2;
+  color: $c-main;
+}
+
+.product__detals {
+  margin-left: auto;
+}
+
+.product__detals-title {
+  margin-bottom: 20px;
+
+  text-transform: capitalize;
+}
+
+.product__detals-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.product__detals-name {
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 1.2;
+  color: #909090;
+}
+
+.product__detals-desc {
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 1.2;
+  color: $c-main;
+}
+
+.product__wrap-img {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.product__btn-next {
+  right: 40px;
+}
+
+.product__btn-prev {
+  left: 40px;
 }
