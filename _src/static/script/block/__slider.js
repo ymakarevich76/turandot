@@ -39,3 +39,24 @@ let swiperThumb = new Swiper('.product__thumb-slider', {
 
 swiperImg.controller.control = swiperThumb;
 swiperThumb.controller.control = swiperImg;
+
+
+const btnZoom = document.querySelector('.product__slide-btn');
+
+if (btnZoom) {
+  const wrapBtnZoom = document.querySelector('.product__slide-wrap-btn');
+  btnZoom.addEventListener('click', (e) => {
+
+    const wrapImages = document.querySelectorAll('.product__wrap-img img');
+
+    wrapImages.forEach((img, index) => {
+      let i = img[index];
+      i++;
+
+      console.log(wrapBtnZoom[i]);
+      wrapBtnZoom.href = img.src;
+    });
+  })
+}
+
+

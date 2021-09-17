@@ -23,3 +23,14 @@
     background-color: $c-accent;
   }
 }
+
+.btn-zoom {
+  position: absolute;
+  top: 11px;
+  right: 11px;
+
+  width: 36px;
+  height: 36px;
+
+  background: url("../img/icon/zoom-btn.png") no-repeat;
+}
