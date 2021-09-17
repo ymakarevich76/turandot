@@ -44,18 +44,8 @@ swiperThumb.controller.control = swiperImg;
 const btnZoom = document.querySelector('.product__slide-btn');
 
 if (btnZoom) {
-  const wrapBtnZoom = document.querySelector('.product__slide-wrap-btn');
   btnZoom.addEventListener('click', (e) => {
-
-    const wrapImages = document.querySelectorAll('.product__wrap-img img');
-
-    wrapImages.forEach((img, index) => {
-      let i = img[index];
-      i++;
-
-      console.log(wrapBtnZoom[i]);
-      wrapBtnZoom.href = img.src;
-    });
+    document.querySelector('.swiper-slide-active .product__item').click();
   })
 }
 
