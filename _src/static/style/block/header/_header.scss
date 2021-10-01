@@ -250,12 +250,14 @@
     transform: translate(100%, 0);
 
     transition: .3s;
+
+    &--active {
+      transform: translate(0, 0);
+    }
   }
 }
 
-.header__nav.active {
-  transform: translate(0, 0);
-}
+
 
 .header__nav .nav__list {
   &:not(:last-child) {

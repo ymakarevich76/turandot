@@ -3,7 +3,7 @@
 
   @media (max-width: $md) {
     position: absolute;
-    top: 6px;
+    top: -121px;
     left: 10px;
     z-index: 450;
 
@@ -12,6 +12,10 @@
     height: 17px;
 
     cursor: pointer;
+
+    .header__nav--active & {
+      top: 35px;
+    }
   }
 
   &::before,
@@ -59,20 +63,26 @@
   }
 }
 
-.icon__menu.active span {
-  transform: scale(0);
+.icon__menu--close span {
+  @media (max-width: $md) {
+    transform: scale(0);
+  }
 }
 
-.icon__menu.active::before {
-  top: 50%;
+.icon__menu--close::before {
+  @media (max-width: $md) {
+    top: 50%;
 
-  transform: rotate(45deg) translate(0, -50%);
+    transform: rotate(45deg) translate(0, -50%);
+  }
 }
 
-.icon__menu.active::after {
-  bottom: 50%;
+.icon__menu--close::after {
+  @media (max-width: $md) {
+    bottom: 50%;
 
-  transform: rotate(-45deg) translate(0, -50%);
+    transform: rotate(-45deg) translate(0, -50%);
+  }
 }
 
 .icon__arrow {
